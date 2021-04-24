@@ -1450,7 +1450,7 @@ preloader
   -webkit-animation-delay: 0.66666s;
   animation-delay: 0.66666s;
 }
-
+/* 
 @-webkit-keyframes jumper {
   0% {
     opacity: 0;
@@ -1479,7 +1479,7 @@ preloader
   100% {
     opacity: 0;
   }
-}
+} */
 
 
 
