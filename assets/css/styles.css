@@ -37,3 +37,44 @@ footer .right-text-content ul li a:hover {
     color: #fff !important;
     border: 1px solid #fff !important;
 }
+
+#preloader {
+background-image: none;
+background: #09b5e0 !important;
+}
+
+a.main-stroked-button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+a.main-stroked-button:hover {
+    background-color: #fff !important;
+    color: #09b5e0 !important;
+}
+
+a.main-filled-button {
+    background-color: #fff !important;
+    color: #09b5e0 !important;
+}
+
+a.main-filled-button:hover {
+    color: #fff !important;
+    background-color: #09b5e0 !important;
+}
+
+#projects .section-heading h6,
+#contact-us .section-heading h6 {
+    color: #09b5e0 !important;
+}
+
+#projects .filters ul li.active,
+#projects .filters ul li:hover {
+    color: #09b5e0 !important;
+}
+
+#subscribe {
+    padding: 80px 0px;
+    background-image: url(../images/slide-01.jpg) !important;
+}
