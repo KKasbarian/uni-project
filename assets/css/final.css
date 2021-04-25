@@ -13271,6 +13271,210 @@ a.text-dark:hover{
 .fa-meetup:before{
     content : "\f2e0";
 }
+.owl-carousel{
+    display : none;
+    width : 100%;
+    -webkit-tap-highlight-color : transparent;
+    position : relative;
+    z-index : 1;
+}
+.owl-carousel .owl-stage{
+    position : relative;
+    -ms-touch-action : pan-Y;
+    touch-action : manipulation;
+    -moz-backface-visibility : hidden;
+}
+.owl-carousel .owl-stage:after{
+    content : ".";
+    display : block;
+    clear : both;
+    visibility : hidden;
+    line-height : 0;
+    height : 0;
+}
+.owl-carousel .owl-stage-outer{
+    position : relative;
+    overflow : hidden;
+    -webkit-transform : translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper{
+    -webkit-backface-visibility : hidden;
+    -moz-backface-visibility : hidden;
+    -ms-backface-visibility : hidden;
+    -webkit-transform : translate3d(0, 0, 0);
+    -moz-transform : translate3d(0, 0, 0);
+    -ms-transform : translate3d(0, 0, 0);
+}
+.owl-carousel .owl-item{
+    -webkit-backface-visibility : hidden;
+    -moz-backface-visibility : hidden;
+    -ms-backface-visibility : hidden;
+    -webkit-transform : translate3d(0, 0, 0);
+    -moz-transform : translate3d(0, 0, 0);
+    -ms-transform : translate3d(0, 0, 0);
+    position : relative;
+    min-height : 1px;
+    float : left;
+    -webkit-tap-highlight-color : transparent;
+    -webkit-touch-callout : none;
+}
+.owl-carousel .owl-item img{
+    display : block;
+    width : 100%;
+}
+.owl-carousel .owl-nav.disabled{
+    display : none;
+}
+.owl-carousel .owl-dots.disabled{
+    display : none;
+}
+.owl-carousel .owl-nav .owl-prev{
+    cursor : pointer;
+    -webkit-user-select : none;
+    -khtml-user-select : none;
+    -moz-user-select : none;
+    -ms-user-select : none;
+    user-select : none;
+}
+.owl-carousel .owl-nav .owl-next{
+    cursor : pointer;
+    -webkit-user-select : none;
+    -khtml-user-select : none;
+    -moz-user-select : none;
+    -ms-user-select : none;
+    user-select : none;
+}
+.owl-carousel .owl-dot{
+    cursor : pointer;
+    -webkit-user-select : none;
+    -khtml-user-select : none;
+    -moz-user-select : none;
+    -ms-user-select : none;
+    user-select : none;
+}
+.owl-carousel .owl-nav button.owl-prev{
+    background : none;
+    color : inherit;
+    border : none;
+    padding : 0 !important;
+    font : inherit;
+}
+.owl-carousel .owl-nav button.owl-next{
+    background : none;
+    color : inherit;
+    border : none;
+    padding : 0 !important;
+    font : inherit;
+}
+.owl-carousel button.owl-dot{
+    background : none;
+    color : inherit;
+    border : none;
+    padding : 0 !important;
+    font : inherit;
+}
+.owl-carousel.owl-loaded{
+    display : block;
+}
+.owl-carousel.owl-loading{
+    opacity : 0;
+    display : block;
+}
+.owl-carousel.owl-hidden{
+    opacity : 0;
+}
+.owl-carousel.owl-refresh .owl-item{
+    visibility : hidden;
+}
+.owl-carousel.owl-drag .owl-item{
+    -ms-touch-action : pan-y;
+    touch-action : pan-y;
+    -webkit-user-select : none;
+    -moz-user-select : none;
+    -ms-user-select : none;
+    user-select : none;
+}
+.owl-carousel.owl-grab{
+    cursor : grab;
+}
+.owl-carousel.owl-rtl{
+    direction : rtl;
+}
+.owl-carousel.owl-rtl .owl-item{
+    float : right;
+}
+.no-js .owl-carousel{
+    display : block;
+}
+.owl-carousel .animated{
+    animation-duration : 1000ms;
+    animation-fill-mode : both;
+}
+.owl-carousel .owl-animated-in{
+    z-index : 0;
+}
+.owl-carousel .owl-animated-out{
+    z-index : 1;
+}
+.owl-height{
+    transition : height 500ms ease-in-out;
+}
+.owl-carousel .owl-item .owl-lazy{
+    opacity : 0;
+    transition : opacity 400ms ease;
+}
+.owl-carousel .owl-item .owl-lazy[src^=""]{
+    max-height : 0;
+}
+.owl-carousel .owl-item .owl-lazy:not([src]){
+    max-height : 0;
+}
+.owl-carousel .owl-item img.owl-lazy{
+    transform-style : preserve-3d;
+}
+.owl-carousel .owl-video-wrapper{
+    position : relative;
+    height : 100%;
+    background : #000;
+}
+.owl-carousel .owl-video-play-icon{
+    position : absolute;
+    height : 80px;
+    width : 80px;
+    left : 50%;
+    top : 50%;
+    margin-left : -40px;
+    margin-top : -40px;
+    background : url("owl.video.play.png") no-repeat;
+    cursor : pointer;
+    z-index : 1;
+    -webkit-backface-visibility : hidden;
+    transition : transform 100ms ease;
+}
+.owl-carousel .owl-video-play-icon:hover{
+    -ms-transform : scale(1.3, 1.3);
+    transform : scale(1.3, 1.3);
+}
+.owl-carousel .owl-video-playing .owl-video-tn{
+    display : none;
+}
+.owl-carousel .owl-video-playing .owl-video-play-icon{
+    display : none;
+}
+.owl-carousel .owl-video-tn{
+    opacity : 0;
+    height : 100%;
+    background-position : center center;
+    background-repeat : no-repeat;
+    background-size : contain;
+    transition : opacity 400ms ease;
+}
+.owl-carousel .owl-video-frame{
+    position : relative;
+    z-index : 1;
+    height : 100%;
+    width : 100%;
+}
 .header-area{
     height : 80px;
     background : rgba(255,255,255,.3) !important;
@@ -13373,6 +13577,74 @@ footer .right-text-content ul li a:hover{
     color : #fff;
     border : 1px solid #fff !important;
     background-color : #5fb759;
+}
+#preloader{
+    background-image : linear-gradient(145deg, #339b9e 0%, #68cc98 100%);
+    background : #09b5e0 !important;
+    overflow : hidden;
+    left : 0;
+    right : 0;
+    top : 0;
+    bottom : 0;
+    position : fixed;
+    z-index : 99999;
+    color : #fff;
+}
+a.main-stroked-button{
+    background-color : transparent;
+    border : 2px solid #fff;
+    color : #fff;
+    font-size : 13px;
+    border-radius : 25px;
+    padding : 11px 25px;
+    text-transform : uppercase;
+    font-weight : 600;
+    letter-spacing : 1px;
+    -webkit-transition : all 0.3s ease 0s;
+    -moz-transition : all 0.3s ease 0s;
+    -o-transition : all 0.3s ease 0s;
+    transition : all 0.3s ease 0s;
+}
+a.main-stroked-button:hover{
+    background-color : #fff;
+    color : #5fb759;
+}
+a.main-filled-button{
+    background-color : #fff;
+    color : #5fb759;
+    font-size : 13px;
+    border-radius : 25px;
+    padding : 13px 25px;
+    text-transform : uppercase;
+    font-weight : 600;
+    letter-spacing : 1px;
+    -webkit-transition : all 0.3s ease 0s;
+    -moz-transition : all 0.3s ease 0s;
+    -o-transition : all 0.3s ease 0s;
+    transition : all 0.3s ease 0s;
+}
+a.main-filled-button:hover{
+    color : #fff;
+    background-color : #5fb759;
+}
+#projects .section-heading h6{
+    color : #5fb759;
+}
+#contact-us .section-heading h6{
+    color : #5fb759;
+}
+#projects .filters ul li.active{
+    color : #5fb759;
+}
+#projects .filters ul li:hover{
+    color : #5fb759;
+}
+#subscribe{
+    padding : 80px 0px;
+    background-image : url(../images/slide-02.jpg);
+    background-position : center center;
+    background-repeat : no-repeat;
+    background-size : cover;
 }
 div{
     margin : 0;
@@ -13560,43 +13832,6 @@ html[xmlns] .clearfix{
 }
 .mobile-bottom-fix-big{
     margin-bottom : 60px;
-}
-a.main-stroked-button{
-    font-size : 13px;
-    border-radius : 25px;
-    padding : 11px 25px;
-    background-color : transparent;
-    border : 2px solid #fff;
-    text-transform : uppercase;
-    color : #fff;
-    font-weight : 600;
-    letter-spacing : 1px;
-    -webkit-transition : all 0.3s ease 0s;
-    -moz-transition : all 0.3s ease 0s;
-    -o-transition : all 0.3s ease 0s;
-    transition : all 0.3s ease 0s;
-}
-a.main-stroked-button:hover{
-    background-color : #fff;
-    color : #5fb759;
-}
-a.main-filled-button{
-    font-size : 13px;
-    border-radius : 25px;
-    padding : 13px 25px;
-    background-color : #fff;
-    text-transform : uppercase;
-    color : #5fb759;
-    font-weight : 600;
-    letter-spacing : 1px;
-    -webkit-transition : all 0.3s ease 0s;
-    -moz-transition : all 0.3s ease 0s;
-    -o-transition : all 0.3s ease 0s;
-    transition : all 0.3s ease 0s;
-}
-a.main-filled-button:hover{
-    color : #fff;
-    background-color : #5fb759;
 }
 a.main-button-icon i{
     margin-left : 5px;
@@ -14280,13 +14515,6 @@ ul.slick-dots{
 .features-item .features-content p{
     margin-bottom : 15px;
 }
-#subscribe{
-    padding : 80px 0px;
-    background-image : url(../images/slide-02.jpg);
-    background-position : center center;
-    background-repeat : no-repeat;
-    background-size : cover;
-}
 #subscribe .section-heading{
     text-align : center;
     color : #fff;
@@ -14437,9 +14665,6 @@ ul.slick-dots{
 #contact-us .section-heading{
     margin-bottom : 50px;
 }
-#contact-us .section-heading h6{
-    color : #5fb759;
-}
 #contact-us .left-text-content ul li{
     margin-bottom : 30px;
     font-size : 14px;
@@ -14530,17 +14755,6 @@ footer .right-text-content ul li{
        margin-right: 10px;
        padding: 0px;
    }
-}
-#preloader{
-    overflow : hidden;
-    background-image : linear-gradient(145deg, #339b9e 0%, #68cc98 100%);
-    left : 0;
-    right : 0;
-    top : 0;
-    bottom : 0;
-    position : fixed;
-    z-index : 99999;
-    color : #fff;
 }
 #preloader .jumper{
     left : 0;
@@ -14672,12 +14886,6 @@ footer .right-text-content ul li{
     -ms-transition : all 0.3s ease-in-out;
     transition : all 0.3s ease-in-out;
 }
-#projects .filters ul li.active{
-    color : #5fb759;
-}
-#projects .filters ul li:hover{
-    color : #5fb759;
-}
 #projects .filters-content{
     margin-top : 50px;
 }
@@ -14724,213 +14932,6 @@ footer .right-text-content ul li{
 }
 #projects .section-heading{
     margin-bottom : 0px;
-}
-#projects .section-heading h6{
-    color : #5fb759;
-}
-.owl-carousel{
-    display : none;
-    width : 100%;
-    -webkit-tap-highlight-color : transparent;
-    position : relative;
-    z-index : 1;
-}
-.owl-carousel .owl-stage{
-    position : relative;
-    -ms-touch-action : pan-Y;
-    touch-action : manipulation;
-    -moz-backface-visibility : hidden;
-}
-.owl-carousel .owl-stage:after{
-    content : ".";
-    display : block;
-    clear : both;
-    visibility : hidden;
-    line-height : 0;
-    height : 0;
-}
-.owl-carousel .owl-stage-outer{
-    position : relative;
-    overflow : hidden;
-    -webkit-transform : translate3d(0px, 0px, 0px);
-}
-.owl-carousel .owl-wrapper{
-    -webkit-backface-visibility : hidden;
-    -moz-backface-visibility : hidden;
-    -ms-backface-visibility : hidden;
-    -webkit-transform : translate3d(0, 0, 0);
-    -moz-transform : translate3d(0, 0, 0);
-    -ms-transform : translate3d(0, 0, 0);
-}
-.owl-carousel .owl-item{
-    -webkit-backface-visibility : hidden;
-    -moz-backface-visibility : hidden;
-    -ms-backface-visibility : hidden;
-    -webkit-transform : translate3d(0, 0, 0);
-    -moz-transform : translate3d(0, 0, 0);
-    -ms-transform : translate3d(0, 0, 0);
-    position : relative;
-    min-height : 1px;
-    float : left;
-    -webkit-tap-highlight-color : transparent;
-    -webkit-touch-callout : none;
-}
-.owl-carousel .owl-item img{
-    display : block;
-    width : 100%;
-}
-.owl-carousel .owl-nav.disabled{
-    display : none;
-}
-.owl-carousel .owl-dots.disabled{
-    display : none;
-}
-.owl-carousel .owl-nav .owl-prev{
-    cursor : pointer;
-    -webkit-user-select : none;
-    -khtml-user-select : none;
-    -moz-user-select : none;
-    -ms-user-select : none;
-    user-select : none;
-}
-.owl-carousel .owl-nav .owl-next{
-    cursor : pointer;
-    -webkit-user-select : none;
-    -khtml-user-select : none;
-    -moz-user-select : none;
-    -ms-user-select : none;
-    user-select : none;
-}
-.owl-carousel .owl-dot{
-    cursor : pointer;
-    -webkit-user-select : none;
-    -khtml-user-select : none;
-    -moz-user-select : none;
-    -ms-user-select : none;
-    user-select : none;
-}
-.owl-carousel .owl-nav button.owl-prev{
-    background : none;
-    color : inherit;
-    border : none;
-    padding : 0 !important;
-    font : inherit;
-}
-.owl-carousel .owl-nav button.owl-next{
-    background : none;
-    color : inherit;
-    border : none;
-    padding : 0 !important;
-    font : inherit;
-}
-.owl-carousel button.owl-dot{
-    background : none;
-    color : inherit;
-    border : none;
-    padding : 0 !important;
-    font : inherit;
-}
-.owl-carousel.owl-loaded{
-    display : block;
-}
-.owl-carousel.owl-loading{
-    opacity : 0;
-    display : block;
-}
-.owl-carousel.owl-hidden{
-    opacity : 0;
-}
-.owl-carousel.owl-refresh .owl-item{
-    visibility : hidden;
-}
-.owl-carousel.owl-drag .owl-item{
-    -ms-touch-action : pan-y;
-    touch-action : pan-y;
-    -webkit-user-select : none;
-    -moz-user-select : none;
-    -ms-user-select : none;
-    user-select : none;
-}
-.owl-carousel.owl-grab{
-    cursor : grab;
-}
-.owl-carousel.owl-rtl{
-    direction : rtl;
-}
-.owl-carousel.owl-rtl .owl-item{
-    float : right;
-}
-.no-js .owl-carousel{
-    display : block;
-}
-.owl-carousel .animated{
-    animation-duration : 1000ms;
-    animation-fill-mode : both;
-}
-.owl-carousel .owl-animated-in{
-    z-index : 0;
-}
-.owl-carousel .owl-animated-out{
-    z-index : 1;
-}
-.owl-height{
-    transition : height 500ms ease-in-out;
-}
-.owl-carousel .owl-item .owl-lazy{
-    opacity : 0;
-    transition : opacity 400ms ease;
-}
-.owl-carousel .owl-item .owl-lazy[src^=""]{
-    max-height : 0;
-}
-.owl-carousel .owl-item .owl-lazy:not([src]){
-    max-height : 0;
-}
-.owl-carousel .owl-item img.owl-lazy{
-    transform-style : preserve-3d;
-}
-.owl-carousel .owl-video-wrapper{
-    position : relative;
-    height : 100%;
-    background : #000;
-}
-.owl-carousel .owl-video-play-icon{
-    position : absolute;
-    height : 80px;
-    width : 80px;
-    left : 50%;
-    top : 50%;
-    margin-left : -40px;
-    margin-top : -40px;
-    background : url("owl.video.play.png") no-repeat;
-    cursor : pointer;
-    z-index : 1;
-    -webkit-backface-visibility : hidden;
-    transition : transform 100ms ease;
-}
-.owl-carousel .owl-video-play-icon:hover{
-    -ms-transform : scale(1.3, 1.3);
-    transform : scale(1.3, 1.3);
-}
-.owl-carousel .owl-video-playing .owl-video-tn{
-    display : none;
-}
-.owl-carousel .owl-video-playing .owl-video-play-icon{
-    display : none;
-}
-.owl-carousel .owl-video-tn{
-    opacity : 0;
-    height : 100%;
-    background-position : center center;
-    background-repeat : no-repeat;
-    background-size : contain;
-    transition : opacity 400ms ease;
-}
-.owl-carousel .owl-video-frame{
-    position : relative;
-    z-index : 1;
-    height : 100%;
-    width : 100%;
 }
 html.lb-disable-scrolling{
     overflow : hidden;
