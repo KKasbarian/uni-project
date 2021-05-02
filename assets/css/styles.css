@@ -7,6 +7,27 @@
     background: #fff !important;
 }
 
+.Modern-Slider .item h3 {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    letter-spacing: 1px !important;
+}
+
+  .Modern-Slider .item h5 {
+    font-size: 36px !important;
+    font-weight: 200 !important;
+    font-style: normal !important;
+    letter-spacing: 2.5px !important;
+}
+
+  a.main-stroked-button {
+    border-radius: 25px !important;
+}
+  
+  a.main-filled-button {
+    border-radius: 25px !important;
+}
+
 .scroll-down a {
     background-color: #09b5e0 !important;
     border-radius: 40% !important;
@@ -64,6 +85,7 @@ a.main-filled-button:hover {
     background-color: #09b5e0 !important;
 }
 
+#about .section-heading h6,
 #projects .section-heading h6,
 #contact-us .section-heading h6 {
     color: #09b5e0 !important;

@@ -13525,13 +13525,12 @@ a.text-dark:hover{
     margin-right : 15px;
 }
 button.main-button-icon{
-    background : #09b5e0 !important;
+    background : #5fb759;
     border : none;
     outline : none;
     font-size : 13px;
     border-radius : 25px;
     padding : 13px 25px;
-    background-color : #5fb759;
     text-transform : uppercase;
     color : #fff;
     font-weight : 600;
@@ -13542,11 +13541,10 @@ button.main-button-icon{
     transition : all 0.3s ease 0s;
 }
 a.main-button-icon{
-    background : #09b5e0 !important;
+    background : #5fb759;
     font-size : 13px;
     border-radius : 25px;
     padding : 13px 25px;
-    background-color : #5fb759;
     text-transform : uppercase;
     color : #fff;
     font-weight : 600;
